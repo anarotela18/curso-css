@@ -1,0 +1,18 @@
+.normal{
+    font-size: 1rem;
+}
+.light{
+    font-weight: 300;
+}
+.bold{
+    font-weight: 700;
+}
+.compact{
+    line-height: 1.2;
+}
+.spaced{
+    letter-spacing: 1.2px;
+}
+.italic{
+    font-style:italic;
+}
