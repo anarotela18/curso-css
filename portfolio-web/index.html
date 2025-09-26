@@ -1,84 +1,338 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ana Rotela - Portfolio Personal</title>
-    <meta name="description" content="Portfolio personal de Ana Rotela. Desarrolladora web en formación aprendiendo HTML y CSS.">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <meta
+      name="description"
+      content="Portfolio personal de Ana Rotela. Desarrolladora web en formación aprendiendo HTML y CSS."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!-- header con navegacion -->
     <header class="header">
-        <div class="header__container">
-            <div class="header__brand">
-                <h1 class="header__name">Ana Rotela</h1>
-                <p class="header_tagline">Desarrolladora web en formación</p>
-            </div>
-
-
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#inicio" class="nav__link nav__link--active">Inicio</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#sobre-mi" class="nav__link">Sobre mí</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#proyectos" class="nav__link">Proyectos</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#habilidades" class="nav__link">Habilidades</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contacto" class="nav__link">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
+      <div class="header__container">
+        <div class="header__brand">
+          <h1 class="header__name">Ana Rotela</h1>
+          <p class="header_tagline">Desarrolladora web en formación</p>
         </div>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#inicio" class="nav__link nav__link--active">Inicio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#sobre-mi" class="nav__link">Sobre mí</a>
+            </li>
+            <li class="nav__item">
+              <a href="#proyectos" class="nav__link">Proyectos</a>
+            </li>
+            <li class="nav__item">
+              <a href="#habilidades" class="nav__link">Habilidades</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacto" class="nav__link">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- Contenido principal -->
     <main class="main">
-        <!-- hero section -->
-        <section class="hero" id="inicio">
-            <div class="hero__container">
-                <h2 class="hero_title">¡Hola! Soy Ana Rotela</h2>
-                <p class="hero__subtitle">Desarrolladora web en formación</p>
-                <p class="hero_description">Estoy aprendiendo HTML y CSS para crear sitios web hermosos y funcionales. Mi pasión: transformar ideas en experiencias web increibles.</p>
+      <!-- hero section -->
+      <section class="hero" id="inicio">
+        <div class="hero__container">
+          <h2 class="hero_title">¡Hola! Soy Ana Rotela</h2>
+          <p class="hero__subtitle">Desarrolladora web en formación</p>
+          <p class="hero_description">
+            Estoy aprendiendo HTML y CSS para crear sitios web hermosos y
+            funcionales. Mi pasión: transformar ideas en experiencias web
+            increibles.
+          </p>
 
-                <div class="hero__actions">
-                    <a href="#proyectos" class="button button--primary">Ver Mis Proyectos</a>
-                    <a href="#contacto" class="button button--secondary">Contáctame</a>
-                </div>
+          <div class="hero__actions">
+            <a href="#proyectos" class="button button--primary">Ver Mis Proyectos</a>
+            <a href="#contacto" class="button button--secondary">Contáctame</a>
+          </div>
 
-                <div class="hero_stats">
-                    <div class="stat">
-                        <span class="stat_number">6+</span>
-                        <span class="stat_label">Meses aprendiendo</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat_number">3+</span>
-                        <span class="stat_label">Proyectos completados</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat_number">5+</span>
-                        <span class="stat_label">Tencologías</span>
-                    </div>
-                </div>
-
+          <div class="hero_stats">
+            <div class="stat">
+              <span class="stat_number">6+</span>
+              <span class="stat_label">Meses aprendiendo</span>
             </div>
-        </section>
-
-        <!-- Sobre mí -->
-        <section class="about" id="sobre-mi">
-            <div class="about__container">
-                <h2 class="about__title">Mi Viaje en el Desarrollo Web</h2>
+            <div class="stat">
+              <span class="stat_number">3+</span>
+              <span class="stat_label">Proyectos completados</span>
             </div>
-        </section>
+            <div class="stat">
+              <span class="stat_number">5+</span>
+              <span class="stat_label">Tecnologías</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- Sobre mí -->
+      <section class="about" id="sobre-mi">
+        <div class="about__container">
+          <h2 class="about__title">Mi Viaje en el Desarrollo Web</h2>
+
+          <p class="about__intro">
+            Soy <strong>desarrolladora web en formación</strong>, actualmente
+            aprendiendo HTML y CSS para crear sitios web hermosos y funcionales.
+          </p>
+
+          <p class="about__text">
+            Me apasiona la tecnología y el diseño. Cada día descubro nuevas
+            formas de mejorar mis habilidades y crear mejores experiencias web.
+          </p>
+
+          <blockquote class="quote">
+            <p class="quote__text">
+              "El buen diseño es obvio. El gran diseño es transparente. Mi
+              objetivo es crear sitios web que sean ambos: bellos y
+              funcionales."
+            </p>
+            <cite class="quote_author">- Mi filosofía de aprendizaje</cite>
+          </blockquote>
+
+          <div class="values">
+            <h3 class="values__title">Mis Valores</h3>
+            <ul class="values__list">
+              <li class="values__item">
+                <span class="values__icon">🎯</span>
+                <strong>Dedicación</strong>
+                <span>Comprometido con mi aprendizaje diario</span>
+              </li>
+              <li class="values__item">
+                <span class="values__icon">📚</span>
+                <strong>Curiosidad</strong>
+                <span>Siempre explorando nuevas tecnologías</span>
+              </li>
+              <li class="values__item">
+                <span class="values__icon">🤝</span>
+                <strong>Comunidad</strong>
+                <span>Aprendiendo y compartiendo con otros</span>
+              </li>
+              <li class="values__item">
+                <span class="values__icon">💡</span>
+                <strong>Creatividad</strong>
+                <span>Buscando soluciones innovadoras</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proyectos -->
+      <section class="projects" id="proyectos">
+        <div class="projects__container">
+          <h2 class="projects__title">Mis Proyectos de Práctica</h2>
+          <p class="projects__description">
+            Cada proyecto representa mi progreso aprendiendo desarrollo web.
+            Desde páginas simples hasta este portfolio completo.
+          </p>
+
+          <div class="projects__grid">
+            <article class="project">
+              <h3 class="project__title">Mi Primer Sitio Web</h3>
+              <p class="project__description">
+                Mi primer proyecto completo usando HTML y CSS. Una página simple
+                pero bien estructurada donde apliqué los conceptos básicos
+                aprendidos.
+              </p>
+
+              <h4 class="project__subtitle">Lo que aprendí:</h4>
+              <ul class="project__learnings">
+                <li>Estructura semántica de HTML</li>
+                <li>Box Model y layout básico</li>
+                <li>Estilos CSS fundamentales</li>
+                <li>Principios básicos de accesibilidad</li>
+                <li>Introducción al diseño responsivo</li>
+              </ul>
+
+              <div class="project__technologies">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+              </div>
+
+              <div class="project__links">
+                <a href="#" class="project__link">Ver proyecto</a>
+                <a href="#" class="project__link">Ver código</a>
+              </div>
+            </article>
+
+            <article class="project project--featured">
+              <span class="project__badge">Destacado</span>
+              <h3 class="project__title">Portfolio Personal</h3>
+              <p class="project__description">
+                Este mismo portfolio que estás viendo. Mi proyecto más completo
+                donde aplico todo lo aprendido en HTML y CSS.
+              </p>
+
+              <h4 class="project__subtitle">Características:</h4>
+              <ul class="project__learnings">
+                <li>HTML semántico y accesible</li>
+                <li>CSS moderno y organizado</li>
+                <li>Diseño responsivo</li>
+                <li>Metodología BEM</li>
+                <li>Optimización de rendimiento</li>
+              </ul>
+
+              <div class="project__technologies">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">BEM</span>
+              </div>
+
+              <div class="project__links">
+                <a href="#" class="project__link">Ver proyecto</a>
+                <a href="#" class="project__link">Ver código</a>
+              </div>
+            </article>
+
+            <article class="project">
+              <h3 class="project__title">Página de Blog</h3>
+              <p class="project__description">
+                Un blog simple donde practico la tipografía web y la
+                organización de contenido. Enfocado en la legibilidad y la
+                experiencia de lectura.
+              </p>
+
+              <h4 class="project__subtitle">Enfoque:</h4>
+              <ul class="project__learnings">
+                <li>Tipografía legible</li>
+                <li>Espaciado correcto</li>
+                <li>Jerarquía visual</li>
+                <li>Colores accesibles</li>
+                <li>Layout de contenido</li>
+              </ul>
+
+              <div class="project__technologies">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">Tipografía</span>
+              </div>
+
+              <div class="project__links">
+                <a href="#" class="project__link">Ver proyecto</a>
+                <a href="#" class="project__link">Ver código</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Habilidades -->
+      <section class="skills" id="habilidades">
+        <div class="skills__container">
+          <h2 class="skills__title">Mis Habilidades</h2>
+
+          <h3 class="skills__subtitle">Tecnologías que estoy aprendiendo</h3>
+
+          <div class="skills__list">
+            <div class="skill">
+              <h4 class="skill__name">HTML5 & Semántica</h4>
+              <div class="skill__bar">
+                <div class="skill__progress skill__progress--html"></div>
+              </div>
+              <span class="skill__percentage">75%</span>
+            </div>
+
+            <div class="skill">
+              <h4 class="skill__name">CSS3 & Diseño</h4>
+              <div class="skill__bar">
+                <div class="skill__progress skill__progress--css"></div>
+              </div>
+              <span class="skill__percentage">60%</span>
+            </div>
+
+            <div class="skill">
+              <h4 class="skill__name">JavaScript (Comenzando)</h4>
+              <div class="skill__bar">
+                <div class="skill__progress skill__progress--js"></div>
+              </div>
+              <span class="skill__percentage">20%</span>
+            </div>
+          </div>
+
+          <div class="learning">
+            <h3 class="learning__title">Actualmente aprendiendo:</h3>
+            <ul class="learning__list">
+              <li class="learning__item">Flexbox y Grid Layout</li>
+              <li class="learning__item">Animaciones CSS</li>
+              <li class="learning__item">Diseño Responsive</li>
+              <li class="learning__item">Accesibilidad Web</li>
+              <li class="learning__item">Mejores prácticas</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section class="contact" id="contacto">
+        <div class="contact__container">
+          <h2 class="contact__title">¿Te gustaría conectar?</h2>
+          <p class="contact__description">
+            Siempre estoy buscando aprender de otros desarrolladores, compartir
+            experiencias y tal vez colaborar en proyectos interesantes.
+          </p>
+
+          <div class="contact__methods">
+            <div class="contact__method">
+              <h3 class="contact__method-title">📧 Email</h3>
+              <a href="mailto:diego@ejemplo.com" class="contact__link">
+                diego@ejemplo.com
+              </a>
+            </div>
+
+            <div class="contact__method">
+              <h3 class="contact__method-title">💻 GitHub</h3>
+              <a href="https://github.com/diegodegranda" class="contact__link">
+                @diegodegranda
+              </a>
+            </div>
+
+            <div class="contact__method">
+              <h3 class="contact__method-title">💼 LinkedIn</h3>
+              <a
+                href="https://linkedin.com/in/diego-degranda"
+                class="contact__link"
+              >
+                /in/diego-degranda
+              </a>
+            </div>
+          </div>
+
+          <a href="#" class="button button--primary button--large">
+            📄 Descargar CV (PDF)
+          </a>
+        </div>
+      </section>
     </main>
 
-</body>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <nav class="footer__nav">
+          <a href="#inicio" class="footer__link">Inicio</a>
+          <a href="#sobre-mi" class="footer__link">Sobre mí</a>
+          <a href="#proyectos" class="footer__link">Proyectos</a>
+          <a href="#habilidades" class="footer__link">Habilidades</a>
+          <a href="#contacto" class="footer__link">Contacto</a>
+        </nav>
+
+        <p class="footer__copyright">
+          © 2025 Diego De Granda - Portfolio Personal
+        </p>
+
+        <p class="footer__credits">
+          Diseñado y desarrollado con ❤️ mientras aprendo HTML y CSS
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
