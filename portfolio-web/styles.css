@@ -3,64 +3,135 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root{
-    
+:root {
+    --color-primary: #2563eb;
+    --color-primary-hover: #1d4ed8;
+    --color-primary-active: #1e40af;
+    --color-primary-light: #3b82f6;
+    --color-primary-lighter: #93c5fd;
+
+    --color-black: #000000;
+    --color-dark: #1a1a1a;
+    --color-gray-dark: #333333;
+    --color-gray: #555555;
+    --color-gray-medium: #666666;
+    --color-gray-light: #9ca3af;
+    --color-gray-lighter: #e0e0e0;
+    --color-white: #ffffff;
+
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --bg-tertiary: #f0f4f8;
+    --bg-quote: #f8f9fa;
+    --bg-values-item: #f8f9fa;
+    --bg-values-hover: #f0f4f8;
+    --bg-footer: #1a1a1a;
+    --bg-contact: #f0f4f8;
+    --bg-projects: #f8f9fa;
+
+    --text-primary: #333333;
+    --text-secondary: #555555;
+    --text-tertiary: #666666;
+    --text-dark: #1a1a1a;
+    --text-strong: #000000;
+    --text-light: #9ca3af;
+    --text-white: #ffffff;
+
+    --font-primary: "Inter", system-ui, -apple-system, sans-serif;
+    --font-secondary: "Playfair Display", Georgia, serif;
+
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    --font-size-2xl: 24px;
+    --font-size-3xl: 28px;
+    --font-size-4xl: 32px;
+    --font-size-5xl: 36px;
+    --font-size-6xl: 40px;
+    --font-size-7xl: 48px;
+    --font-size-8xl: 56px;
+    --font-size-9xl: 64px;
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+
+    --spacing-xs: 8px;
+    --spacing-sm: 12px;
+    --spacing-md: 16px;
+    --spacing-lg: 20px;
+    --spacing-xl: 24px;
+    --spacing-2xl: 32px;
+    --spacing-3xl: 48px;
+    --spacing-4xl: 64px;
+
+    --border-color: #e0e0e0;
+    --border-color-hover: #2563eb;
+    --border-width: 1px;
+    --border-width-thick: 2px;
+
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 body {
-    font-family: "Inter", system-ui, -apple-system, sans-serif;
-    font-size: 16px;
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
     line-height: 1.7;
-    color: #333333;
-    color: var(--bg-principal-color);
-    background-color: #ffffff;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
     text-rendering: optimizeLegibility;
 }
 h1,
 h2,
 h3,
 h4 {
-    font-family: "Playfair Display", Georgia, serif;
-    font-weight: 700;
+    font-family: var(--font-secondary);
+    font-weight: var(--font-weight-bold);
     line-height: 1.2;
-    color: #1a1a1a;
+    color: var(--text-dark);
 }
 
 h1 {
-    font-size: 48px;
-    margin-bottom: 24px;
-    font-weight: 900;
+    font-size: var(--font-size-7xl);
+    margin-bottom: var(--spacing-xl);
+    font-weight: var(--font-weight-black);
 }
 
 h2 {
-    font-size: 36px;
-    margin-top: 48px;
-    margin-bottom: 20px;
+    font-size: var(--font-size-5xl);
+    margin-top: var(--spacing-3xl);
+    margin-bottom: var(--spacing-lg);
 }
 
 h3 {
-    font-size: 28px;
-    margin-top: 40px;
-    margin-bottom: 16px;
-    font-weight: 600;
+    font-size: var(--font-size-3xl);
+    margin-top: var(--spacing-2xl);
+    margin-bottom: var(--spacing-md);
+    font-weight: var(--font-weight-semibold);
 }
 
 h4 {
-    font-size: 20px;
-    margin-top: 32px;
-    margin-bottom: 12px;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
+    font-size: var(--font-size-xl);
+    margin-top: var(--spacing-2xl);
+    margin-bottom: var(--spacing-sm);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-semibold);
 }
 
 p {
-    margin-bottom: 20px;
+    margin-bottom: var(--spacing-lg);
     max-width: 70%;
 }
 
 strong {
-    font-weight: 600;
-    color: #000000;
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-strong);
 }
 
 em {
@@ -68,141 +139,163 @@ em {
 }
 .about__intro,
 .hero__description {
-    font-size: 18px;
+    font-size: var(--font-size-lg);
     line-height: 1.8;
-    color: #555555;
+    color: var(--text-secondary);
 }
 
 a {
-    color: #2563eb;
+    color: var(--color-primary);
     text-decoration: none;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: var(--border-width-thick);
     text-underline-offset: 2px;
 }
 
 a:hover {
-    color: #1d4ed8;
+    color: var(--color-primary-hover);
     text-decoration: underline;
 }
 
 a:active {
-    color: #1e40af;
+    color: var(--color-primary-active);
 }
 ul {
     list-style: none;
 }
 .header {
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 24px 0;
+    padding: var(--spacing-xl) 0;
+    background: var(--color-white);
+    border-bottom: none;
+    box-shadow: var(--shadow-md);
+    animation: slideInFromTop 0.5s ease-out;
 }
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-100%);
+    }
 
+    to {
+        transform: translateY(0);
+    }
+}
 .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
-
-.header__brand {
-    text-align: center;
-    margin-bottom: 24px;
-}
-
 .header__name {
-    color: #1a1a1a;
-    margin-bottom: 8px;
-    font-family: "Playfair Display", serif;
-    font-weight: 900;
+    color: var(--text-dark);
+    font-family: var(--font-secondary);
+    font-weight: var(--font-weight-black);
+    margin-bottom: 0;
 }
 
 .header__tagline {
-    color: #666666;
-    font-size: 14px;
+    color: var(--text-tertiary);
+    font-size: var(--font-size-sm);
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
+    margin-bottom: 0;
 }
-.nav {
-    text-align: center;
-}
-
 .nav__list {
-    display: inline-block;
-}
-
-.nav__item {
-    display: inline-block;
-    margin: 0 16px;
+    display: flex;
+    gap: 16px;
 }
 
 .nav__link {
-    padding: 8px 12px;
+    padding: var(--spacing-xs) var(--spacing-sm);
     display: inline-block;
-    color: #333333;
-    font-weight: 500;
+    color: var(--text-primary);
+    font-weight: var(--font-weight-medium);
     font-size: 15px;
 }
 
 .nav__link:hover {
-    color: #2563eb;
+    color: var(--color-primary);
     text-decoration: none;
 }
 
 .nav__link--active {
-    color: #2563eb;
-    font-weight: 600;
+    color: var(--color-primary);
+    font-weight: var(--font-weight-semibold);
+}
+.nav__link:hover {
+    color: var(--color-primary);
+    background: var(--color-lighter);
 }
 
-/* ===========================================
-     7. MAIN CONTENT
-     =========================================== */
+.nav__link--active {
+    color: var(--color-white);
+    background: var(--gradient-primary);
+    padding: 8px 16px;
+    box-shadow: var(--shadow-sm);
+}
+
+.nav__link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-primary);
+    transition: width 0.3s ease;
+}
+
+.nav__link:hover::before {
+    width: 100%;
+}
+
+.nav__link--active {
+    animation: pulse 2s ease-in-out infinite;
+}
+
 .main {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 0 20px;
+    padding: 0 var(--spacing-lg);
 }
 
-/* ===========================================
-     8. HERO SECTION - TIPOGRAFÍA MEJORADA
-     =========================================== */
 .hero {
-    padding: 64px 0;
+    padding: var(--spacing-4xl) 0;
     text-align: center;
-    background-color: #f0f4f8;
-    margin-bottom: 48px;
+    background-color: var(--bg-tertiary);
+    margin-bottom: var(--spacing-3xl);
 }
 
 .hero__container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 var(--spacing-lg);
 }
 
 .hero__title {
-    font-size: 56px;
-    /* 56px */
-    color: #1a1a1a;
-    margin-bottom: 16px;
-    /* MEJORADO: Mejor peso y espaciado */
-    font-weight: 900;
+    font-size: var(--font-size-8xl);
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-md);
+    font-weight: var(--font-weight-black);
     letter-spacing: -0.04em;
     line-height: 1.1;
 }
 
 .hero__subtitle {
-    font-size: 24px;
-    /* 24px */
-    color: #2563eb;
-    margin-bottom: 24px;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
+    font-size: var(--font-size-2xl);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xl);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-semibold);
     letter-spacing: -0.01em;
 }
 
 .hero__description {
-    font-size: 18px;
-    /* 18px */
-    color: #666666;
-    margin-bottom: 32px;
+    font-size: var(--font-size-lg);
+    color: var(--text-tertiary);
+    margin-bottom: var(--spacing-2xl);
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -210,7 +303,7 @@ ul {
 }
 
 .hero__actions {
-    margin-bottom: 48px;
+    margin-bottom: var(--spacing-3xl);
 }
 
 .hero__stats {
@@ -219,64 +312,58 @@ ul {
 
 .stat {
     display: inline-block;
-    margin: 0 32px;
+    margin: 0 var(--spacing-2xl);
     text-align: center;
 }
 
 .stat__number {
     display: block;
-    font-size: 40px;
-    /* 40px */
-    font-weight: 700;
-    color: #2563eb;
-    margin-bottom: 8px;
-    font-family: "Playfair Display", serif;
+    font-size: var(--font-size-6xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+    font-family: var(--font-secondary);
     letter-spacing: -0.02em;
 }
 
 .stat__label {
-    font-size: 14px;
-    /* 14px */
-    color: #666666;
+    font-size: var(--font-size-sm);
+    color: var(--text-tertiary);
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
 }
 
-/* ===========================================
-     9. BOTONES - TIPOGRAFÍA MEJORADA
-     =========================================== */
 .button {
     display: inline-block;
-    padding: 12px 24px;
-    margin: 8px;
-    font-size: 16px;
-    font-weight: 600;
+    padding: var(--spacing-sm) var(--spacing-xl);
+    margin: var(--spacing-xs);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
     text-align: center;
-    border: 2px solid transparent;
+    border: var(--border-width-thick) solid transparent;
     cursor: pointer;
     text-decoration: none;
-    /* NUEVO: Mejor tipografía en botones */
-    font-family: "Inter", sans-serif;
+    font-family: var(--font-primary);
     letter-spacing: 0.02em;
 }
 
 .button--primary {
-    background-color: #2563eb;
-    color: #ffffff;
-    border-color: #2563eb;
+    background-color: var(--color-primary);
+    color: var(--text-white);
+    border-color: var(--color-primary);
 }
 
 .button--primary:hover {
-    background-color: #1d4ed8;
-    border-color: #1d4ed8;
+    background-color: var(--color-primary-hover);
+    border-color: var(--color-primary-hover);
     text-decoration: none;
 }
 
 .button--secondary {
-    background-color: #ffffff;
-    color: #2563eb;
-    border-color: #2563eb;
+    background-color: var(--bg-primary);
+    color: var(--color-primary);
+    border-color: var(--color-primary);
 }
 
 .button--secondary:hover {
@@ -285,15 +372,12 @@ ul {
 }
 
 .button--large {
-    padding: 16px 32px;
-    font-size: 18px;
+    padding: var(--spacing-md) var(--spacing-2xl);
+    font-size: var(--font-size-lg);
 }
 
-/* ===========================================
-     10. ABOUT SECTION - TIPOGRAFÍA MEJORADA
-     =========================================== */
 .about {
-    padding: 48px 0;
+    padding: var(--spacing-3xl) 0;
 }
 
 .about__container {
@@ -303,68 +387,59 @@ ul {
 
 .about__title {
     text-align: center;
-    color: #1a1a1a;
-    margin-bottom: 32px;
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-2xl);
 }
 
 .about__intro {
-    font-size: 20px;
-    /* 20px */
+    font-size: var(--font-size-xl);
     text-align: center;
-    color: #333333;
-    margin-bottom: 24px;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xl);
     line-height: 1.7;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
 }
 
 .about__text {
-    color: #666666;
-    margin-bottom: 32px;
+    color: var(--text-tertiary);
+    margin-bottom: var(--spacing-2xl);
     line-height: 1.8;
 }
 
-/* ===========================================
-     11. QUOTE - TIPOGRAFÍA MEJORADA
-     =========================================== */
 .quote {
-    background-color: #f8f9fa;
-    padding: 32px;
+    background-color: var(--bg-quote);
+    padding: var(--spacing-2xl);
     margin: 40px 0;
-    border-left: 4px solid #2563eb;
+    border-left: 4px solid var(--color-primary);
 }
 
 .quote__text {
-    font-size: 20px;
-    /* 20px */
+    font-size: var(--font-size-xl);
     font-style: italic;
-    color: #333333;
-    margin-bottom: 16px;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
     line-height: 1.7;
-    /* NUEVO: Mejor tipografía para citas */
-    font-family: "Playfair Display", serif;
-    font-weight: 400;
+    font-family: var(--font-secondary);
+    font-weight: var(--font-weight-normal);
 }
 
 .quote__author {
-    color: #666666;
-    font-size: 14px;
+    color: var(--text-tertiary);
+    font-size: var(--font-size-sm);
     display: block;
     text-align: right;
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-medium);
     letter-spacing: 0.05em;
 }
 
-/* ===========================================
-     12. VALUES - TIPOGRAFÍA MEJORADA
-     =========================================== */
 .values {
-    margin-top: 48px;
+    margin-top: var(--spacing-3xl);
 }
 
 .values__title {
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: var(--spacing-2xl);
 }
 
 .values__list {
@@ -372,40 +447,37 @@ ul {
 }
 
 .values__item {
-    padding: 20px;
-    margin-bottom: 16px;
-    background-color: #f8f9fa;
-    border: 1px solid #e0e0e0;
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+    background-color: var(--bg-values-item);
+    border: var(--border-width) solid var(--border-color);
     line-height: 1.6;
 }
 
 .values__item:hover {
-    background-color: #f0f4f8;
-    border-color: #2563eb;
+    background-color: var(--bg-values-hover);
+    border-color: var(--border-color-hover);
 }
 
 .values__icon {
-    font-size: 24px;
-    margin-right: 12px;
+    font-size: var(--font-size-2xl);
+    margin-right: var(--spacing-sm);
 }
 
 .values__item strong {
-    margin-right: 8px;
-    font-weight: 600;
+    margin-right: var(--spacing-xs);
+    font-weight: var(--font-weight-semibold);
     font-size: 17px;
 }
 
 .values__item span {
-    color: #666666;
+    color: var(--text-tertiary);
     font-size: 15px;
 }
 
-/* ===========================================
-     13. PROJECTS SECTION
-     =========================================== */
 .projects {
-    padding: 64px 0;
-    background-color: #f8f9fa;
+    padding: var(--spacing-4xl) 0;
+    background-color: var(--bg-projects);
 }
 
 .projects__container {
@@ -415,13 +487,13 @@ ul {
 
 .projects__title {
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: var(--spacing-md);
 }
 
 .projects__description {
     text-align: center;
-    color: #666666;
-    margin-bottom: 48px;
+    color: var(--text-tertiary);
+    margin-bottom: var(--spacing-3xl);
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -430,85 +502,82 @@ ul {
 }
 
 .projects__grid {
-    padding: 0 20px;
+    padding: 0 var(--spacing-lg);
 }
 
-/* ===========================================
-     14. PROJECT CARD - TIPOGRAFÍA MEJORADA
-     =========================================== */
 .project {
-    background-color: #ffffff;
-    padding: 32px;
-    margin-bottom: 32px;
-    border: 1px solid #e0e0e0;
+    background-color: var(--bg-primary);
+    padding: var(--spacing-2xl);
+    margin-bottom: var(--spacing-2xl);
+    border: var(--border-width) solid var(--border-color);
 }
 
 .project:hover {
-    border-color: #2563eb;
+    border-color: var(--border-color-hover);
 }
 
 .project--featured {
-    border: 2px solid #2563eb;
+    border: var(--border-width-thick) solid var(--color-primary);
     position: relative;
 }
 
 .project__badge {
-    background-color: #2563eb;
-    color: #ffffff;
-    padding: 4px 12px;
-    font-size: 12px;
-    font-weight: 600;
+    background-color: var(--color-primary);
+    color: var(--text-white);
+    padding: 4px var(--spacing-sm);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
     text-transform: uppercase;
     display: inline-block;
-    margin-bottom: 16px;
+    margin-bottom: var(--spacing-md);
     letter-spacing: 0.1em;
 }
 
 .project__title {
-    color: #1a1a1a;
-    margin-bottom: 16px;
-    font-family: "Playfair Display", serif;
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-md);
+    font-family: var(--font-secondary);
 }
 
 .project__description {
-    color: #666666;
-    margin-bottom: 24px;
+    color: var(--text-tertiary);
+    margin-bottom: var(--spacing-xl);
     line-height: 1.7;
 }
 
 .project__subtitle {
     font-size: 17px;
-    color: #333333;
-    margin-top: 24px;
-    margin-bottom: 12px;
-    font-weight: 600;
-    font-family: "Inter", sans-serif;
+    color: var(--text-primary);
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-sm);
+    font-weight: var(--font-weight-semibold);
+    font-family: var(--font-primary);
 }
 
 .project__learnings {
     list-style: disc;
-    padding-left: 24px;
-    margin-bottom: 24px;
+    padding-left: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
 }
 
 .project__learnings li {
-    color: #666666;
-    margin-bottom: 8px;
+    color: var(--text-tertiary);
+    margin-bottom: var(--spacing-xs);
     line-height: 1.6;
 }
 
 .project__technologies {
-    margin-bottom: 24px;
+    margin-bottom: var(--spacing-xl);
 }
 
 .tag {
     display: inline-block;
     background-color: #e0f2fe;
     color: #0369a1;
-    padding: 4px 12px;
-    margin-right: 8px;
-    font-size: 14px;
-    font-weight: 600;
+    padding: 4px var(--spacing-sm);
+    margin-right: var(--spacing-xs);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
     letter-spacing: 0.025em;
 }
 
@@ -518,16 +587,13 @@ ul {
 
 .project__link {
     display: inline-block;
-    margin-right: 16px;
-    font-weight: 600;
+    margin-right: var(--spacing-md);
+    font-weight: var(--font-weight-semibold);
     font-size: 15px;
 }
 
-/* ===========================================
-     15. SKILLS SECTION - TIPOGRAFÍA MEJORADA
-     =========================================== */
 .skills {
-    padding: 64px 0;
+    padding: var(--spacing-4xl) 0;
 }
 
 .skills__container {
@@ -537,41 +603,41 @@ ul {
 
 .skills__title {
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: var(--spacing-md);
 }
 
 .skills__subtitle {
     text-align: center;
-    color: #666666;
-    margin-bottom: 32px;
+    color: var(--text-tertiary);
+    margin-bottom: var(--spacing-2xl);
     font-size: 17px;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
 }
 
 .skills__list {
-    margin-bottom: 48px;
+    margin-bottom: var(--spacing-3xl);
 }
 
 .skill {
-    margin-bottom: 32px;
+    margin-bottom: var(--spacing-2xl);
 }
 
 .skill__name {
-    margin-bottom: 8px;
-    color: #1a1a1a;
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-dark);
     font-size: 17px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
 }
 
 .skill__bar {
-    background-color: #e0e0e0;
-    height: 24px;
+    background-color: var(--color-gray-lighter);
+    height: var(--spacing-xl);
     position: relative;
-    margin-bottom: 8px;
+    margin-bottom: var(--spacing-xs);
 }
 
 .skill__progress {
-    background-color: #2563eb;
+    background-color: var(--color-primary);
     height: 100%;
     position: absolute;
     top: 0;
@@ -591,42 +657,36 @@ ul {
 }
 
 .skill__percentage {
-    color: #666666;
-    font-size: 14px;
-    font-weight: 500;
+    color: var(--text-tertiary);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
 }
 
-/* ===========================================
-     16. LEARNING - TIPOGRAFÍA MEJORADA
-     =========================================== */
 .learning {
-    background-color: #f8f9fa;
-    padding: 24px;
+    background-color: var(--bg-secondary);
+    padding: var(--spacing-xl);
 }
 
 .learning__title {
-    margin-bottom: 16px;
-    color: #1a1a1a;
-    font-size: 20px;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-dark);
+    font-size: var(--font-size-xl);
 }
 
 .learning__list {
     list-style: disc;
-    padding-left: 24px;
+    padding-left: var(--spacing-xl);
 }
 
 .learning__item {
-    color: #666666;
-    margin-bottom: 8px;
+    color: var(--text-tertiary);
+    margin-bottom: var(--spacing-xs);
     line-height: 1.6;
 }
 
-/* ===========================================
-     17. CONTACT SECTION - TIPOGRAFÍA MEJORADA
-     =========================================== */
 .contact {
-    padding: 64px 0;
-    background-color: #f0f4f8;
+    padding: var(--spacing-4xl) 0;
+    background-color: var(--bg-contact);
 }
 
 .contact__container {
@@ -636,12 +696,12 @@ ul {
 }
 
 .contact__title {
-    margin-bottom: 16px;
+    margin-bottom: var(--spacing-md);
 }
 
 .contact__description {
-    color: #666666;
-    margin-bottom: 48px;
+    color: var(--text-tertiary);
+    margin-bottom: var(--spacing-3xl);
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -650,70 +710,67 @@ ul {
 }
 
 .contact__methods {
-    margin-bottom: 48px;
+    margin-bottom: var(--spacing-3xl);
 }
 
 .contact__method {
     display: inline-block;
-    margin: 0 32px 32px;
+    margin: 0 var(--spacing-2xl) var(--spacing-2xl);
     text-align: center;
 }
 
 .contact__method-title {
-    font-size: 18px;
-    margin-bottom: 8px;
-    color: #1a1a1a;
-    font-weight: 600;
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-dark);
+    font-weight: var(--font-weight-semibold);
 }
 
 .contact__link {
-    color: #2563eb;
-    font-weight: 500;
+    color: var(--color-primary);
+    font-weight: var(--font-weight-medium);
     font-size: 15px;
 }
 
-/* ===========================================
-     18. FOOTER - TIPOGRAFÍA MEJORADA
-     =========================================== */
 .footer {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    padding: 48px 0;
+    background-color: var(--bg-footer);
+    color: var(--text-white);
+    padding: var(--spacing-3xl) 0;
     text-align: center;
 }
 
 .footer__container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 var(--spacing-lg);
 }
 
 .footer__nav {
-    margin-bottom: 24px;
+    margin-bottom: var(--spacing-xl);
 }
 
 .footer__link {
-    color: #ffffff;
-    margin: 0 16px;
+    color: var(--text-white);
+    margin: 0 var(--spacing-md);
     display: inline-block;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
 }
 
 .footer__link:hover {
-    color: #93c5fd;
+    color: var(--color-primary-lighter);
     text-decoration: none;
 }
 
 .footer__copyright {
-    color: #9ca3af;
-    margin-bottom: 8px;
-    font-size: 14px;
+    color: var(--text-light);
+    margin-bottom: var(--spacing-xs);
+    font-size: var(--font-size-sm);
 }
 
 .footer__credits {
-    color: #9ca3af;
-    font-size: 14px;
+    color: var(--text-light);
+    font-size: var(--font-size-sm);
     line-height: 1.5;
 }
 
@@ -728,75 +785,24 @@ ul {
   */
 
 /* ===========================================
-     19. VARIABLES CSS - NUEVO MÓDULO 3
+     19. VARIABLES ADICIONALES - MÓDULO 3
      =========================================== */
+/* Las variables principales están definidas arriba */
+/* Aquí agregamos variables específicas del módulo 3 */
 :root {
-    /* Colores principales - Paleta más vibrante y clara */
-    --color-primary: #5b21b6;
-    /* Púrpura vibrante */
-    --color-primary-dark: #4c1d95;
-    /* Púrpura oscuro */
-    --color-primary-darker: #3b0764;
-    /* Púrpura muy oscuro */
-    --color-primary-light: #8b5cf6;
-    /* Púrpura claro */
-    --color-primary-lighter: #a78bfa;
-    /* Púrpura muy claro */
-
-    /* Colores secundarios */
+    /* Colores adicionales específicos del módulo 3 */
     --color-secondary: #06b6d4;
-    /* Cyan vibrante */
     --color-secondary-dark: #0891b2;
-    /* Cyan oscuro */
     --color-secondary-light: #22d3ee;
-    /* Cyan claro */
-
-    /* Colores neutros - Más claros para mejor contraste */
-    --color-dark: #1f2937;
-    /* Gris muy oscuro (no negro puro) */
-    --color-gray-dark: #374151;
-    /* Gris oscuro */
-    --color-gray: #6b7280;
-    /* Gris medio */
-    --color-gray-light: #9ca3af;
-    /* Gris claro */
-    --color-gray-lighter: #e5e7eb;
-    /* Gris muy claro */
-    --color-light: #f9fafb;
-    /* Casi blanco */
-    --color-lighter: #fef3c7;
-    /* Crema muy claro */
-    --color-white: #ffffff;
-    /* Blanco puro */
-
-    /* Colores de acento */
     --color-accent: #f59e0b;
-    /* Naranja dorado */
     --color-accent-light: #fbbf24;
+    --color-light-bg: #f9fafb;
+    --color-lighter-bg: #fef3c7;
 
-    /* Sombras */
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-        0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-        0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-        0 10px 10px -5px rgba(0, 0, 0, 0.04);
-
-    /* Degradados - Más vibrantes y luminosos */
-    --gradient-primary: linear-gradient(135deg,
-            #8b5cf6 0%,
-            #06b6d4 100%);
-    /* Púrpura a cyan */
-    --gradient-hero: linear-gradient(135deg,
-            #a78bfa 0%,
-            #5b21b6 50%,
-            #06b6d4 100%);
-    /* Degradado tricolor */
-    --gradient-accent: linear-gradient(135deg,
-            #fbbf24 0%,
-            #f59e0b 100%);
-    /* Dorado */
+    /* Degradados */
+    --gradient-primary: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-secondary) 100%);
+    --gradient-hero: linear-gradient(135deg, var(--color-primary-lighter) 0%, var(--color-primary) 50%, var(--color-secondary) 100%);
+    --gradient-accent: linear-gradient(135deg, var(--color-accent-light) 0%, var(--color-accent) 100%);
 
     /* Border radius */
     --radius-sm: 4px;
@@ -808,37 +814,13 @@ ul {
 /* ===========================================
      20. ACTUALIZACIONES CON VARIABLES - MÓDULO 3
      =========================================== */
-
-/* Actualizar colores con variables */
-body {
-    color: var(--color-gray-dark);
-    background-color: var(--color-white);
-}
-
-h1,
-h2,
-h3,
-h4 {
-    color: var(--color-dark);
-}
-
-a {
-    color: var(--color-primary);
-}
-
-a:hover {
-    color: var(--color-primary-dark);
-}
-
-a:active {
-    color: var(--color-primary-darker);
-}
+/* Las variables ya están aplicadas en las secciones principales */
+/* Esta sección queda como referencia del módulo 3 */
 
 /* ===========================================
      21. HERO CON DEGRADADOS - MÓDULO 3
      =========================================== */
 .hero {
-    /* NUEVO: Degradado de fondo */
     background: var(--gradient-hero);
     position: relative;
     overflow: hidden;
@@ -859,7 +841,6 @@ a:active {
 
 .hero__title {
     color: var(--color-white);
-    /* NUEVO: Sombra de texto */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -1065,32 +1046,6 @@ a:active {
 }
 
 /* ===========================================
-     30. HEADER CON SOMBRA - MÓDULO 3
-     =========================================== */
-.header {
-    background: var(--color-white);
-    border-bottom: none;
-    box-shadow: var(--shadow-md);
-}
-
-.nav__link {
-    color: var(--color-gray-dark);
-    border-radius: var(--radius-md);
-}
-
-.nav__link:hover {
-    color: var(--color-primary);
-    background: var(--color-lighter);
-}
-
-.nav__link--active {
-    color: var(--color-white);
-    background: var(--gradient-primary);
-    padding: 8px 16px;
-    box-shadow: var(--shadow-sm);
-}
-
-/* ===========================================
      31. FOOTER CON DEGRADADO - MÓDULO 3
      =========================================== */
 .footer {
@@ -1118,55 +1073,6 @@ a:active {
             #f9fafb 0%,
             #ede9fe 100%);
     /* Blanco a lila muy claro */
-}
-
-/* 
-  ╔═══════════════════════════════════════════════════════════════════════════╗
-  ║                                                                           ║
-  ║  MÓDULO 4: CÓDIGO NUEVO - FLEXBOX Y CSS GRID                            ║
-  ║  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━   ║
-  ║  A partir de aquí todo es código NUEVO del Módulo 4                     ║
-  ║                                                                           ║
-  ╚═══════════════════════════════════════════════════════════════════════════╝
-  */
-
-/* ===========================================
-     33. HEADER CON FLEXBOX - NUEVO MÓDULO 4
-     =========================================== */
-.header__container {
-    /* NUEVO: Flexbox para header */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 32px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.header__brand {
-    /* Ya no necesitamos text-align center */
-    text-align: left;
-    margin-bottom: 0;
-}
-
-.nav {
-    /* Ya no necesitamos text-align center */
-    text-align: left;
-}
-
-.nav__list {
-    /* NUEVO: Flexbox para navegación */
-    display: flex;
-    gap: 16px;
-    align-items: center;
-}
-
-.nav__item {
-    /* Ya no necesitamos display inline-block */
-    display: block;
-    margin: 0;
 }
 
 /* ===========================================
@@ -1478,435 +1384,6 @@ h2 {
     margin-right: auto;
 }
 
-/* 
-  ╔═══════════════════════════════════════════════════════════════════════════╗
-  ║                                                                           ║
-  ║  MÓDULO 5: CÓDIGO NUEVO - RESPONSIVE DESIGN                              ║
-  ║  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━   ║
-  ║  A partir de aquí todo es código NUEVO del Módulo 5                     ║
-  ║  Media Queries, Mobile-First, Diseño Fluido                             ║
-  ║                                                                           ║
-  ╚═══════════════════════════════════════════════════════════════════════════╝
-  */
-
-/* ===========================================
-     43. MEDIA QUERIES - NUEVO MÓDULO 5
-     =========================================== */
-
-/* Mobile First - Estilos base ya definidos arriba */
-
-/* ===========================================
-     44. TABLET (768px) - MÓDULO 5
-     =========================================== */
-@media (max-width: 768px) {
-
-    /* HEADER RESPONSIVE */
-    .header__container {
-        flex-direction: column;
-        text-align: center;
-        gap: 16px;
-    }
-
-    .header__brand {
-        text-align: center;
-    }
-
-    .nav__list {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    /* HERO RESPONSIVE */
-    .hero__title {
-        font-size: 40px;
-        /* 40px */
-    }
-
-    .hero__subtitle {
-        font-size: 20px;
-        /* 20px */
-    }
-
-    .hero__stats {
-        gap: 32px;
-    }
-
-    /* ABOUT RESPONSIVE */
-    .values__list {
-        grid-template-columns: 1fr;
-    }
-
-    /* PROJECTS RESPONSIVE */
-    .projects__grid {
-        grid-template-columns: 1fr;
-    }
-
-    .project--featured {
-        grid-column: span 1;
-    }
-
-    /* CONTACT RESPONSIVE */
-    .contact__methods {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* TIPOGRAFÍA RESPONSIVE */
-    h1 {
-        font-size: 40px;
-        /* 40px */
-    }
-
-    h2 {
-        font-size: 32px;
-        /* 32px */
-    }
-
-    h3 {
-        font-size: 24px;
-        /* 24px */
-    }
-}
-
-/* ===========================================
-     45. MÓVIL (480px) - MÓDULO 5
-     =========================================== */
-@media (max-width: 480px) {
-
-    /* ESPACIADO GENERAL */
-    body {
-        font-size: 14px;
-    }
-
-    /* PADDING REDUCIDO */
-    .header {
-        padding: 16px 0;
-    }
-
-    section {
-        padding: 32px 0;
-    }
-
-    /* HEADER MÓVIL */
-    .header__name {
-        font-size: 28px;
-        /* 28px */
-    }
-
-    .header__tagline {
-        font-size: 12px;
-        /* 12px */
-    }
-
-    .nav__list {
-        gap: 8px;
-    }
-
-    .nav__link {
-        font-size: 14px;
-        /* 14px */
-        padding: 6px 10px;
-    }
-
-    /* HERO MÓVIL */
-    .hero {
-        min-height: 500px;
-        padding: 48px 0;
-    }
-
-    .hero__title {
-        font-size: 32px;
-        /* 32px */
-        line-height: 1.2;
-    }
-
-    .hero__subtitle {
-        font-size: 18px;
-        /* 18px */
-    }
-
-    .hero__description {
-        font-size: 16px;
-        /* 16px */
-    }
-
-    .hero__actions {
-        flex-direction: column;
-        width: 100%;
-        padding: 0 20px;
-    }
-
-    .button {
-        width: 100%;
-        padding: 14px 20px;
-    }
-
-    .hero__stats {
-        flex-direction: column;
-        gap: 24px;
-    }
-
-    .stat__number {
-        font-size: 32px;
-        /* 32px */
-    }
-
-    /* ABOUT MÓVIL */
-    .about__intro {
-        font-size: 18px;
-        /* 18px */
-    }
-
-    .quote {
-        padding: 24px;
-        margin: 32px 0;
-    }
-
-    .quote__text {
-        font-size: 18px;
-        /* 18px */
-    }
-
-    /* values__item ya está en columna por defecto */
-
-    /* PROJECTS MÓVIL */
-    .project {
-        padding: 24px;
-    }
-
-    .project__title {
-        font-size: 24px;
-        /* 24px */
-    }
-
-    /* SKILLS MÓVIL */
-    .skill__bar {
-        height: 20px;
-    }
-
-    .learning__list {
-        grid-template-columns: 1fr;
-    }
-
-    /* CONTACT MÓVIL */
-    .contact__method {
-        width: 100%;
-    }
-
-    /* FOOTER MÓVIL */
-    .footer__nav {
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .footer__link {
-        font-size: 14px;
-        /* 14px */
-    }
-
-    /* TIPOGRAFÍA MÓVIL */
-    h1 {
-        font-size: 32px;
-        /* 32px */
-    }
-
-    h2 {
-        font-size: 28px;
-        /* 28px */
-    }
-
-    h3 {
-        font-size: 20px;
-        /* 20px */
-    }
-
-    h4 {
-        font-size: 18px;
-        /* 18px */
-    }
-
-    p {
-        margin-bottom: 16px;
-    }
-}
-
-/* ===========================================
-     46. DESKTOP GRANDE (1400px+) - MÓDULO 5
-     =========================================== */
-@media (min-width: 1400px) {
-
-    /* CONTENEDORES MÁS ANCHOS */
-    .header__container,
-    .projects__container,
-    .footer__container {
-        max-width: 1400px;
-    }
-
-    /* HERO MÁS GRANDE */
-    .hero {
-        min-height: 700px;
-    }
-
-    .hero__title {
-        font-size: 64px;
-        /* 64px */
-    }
-
-    .hero__subtitle {
-        font-size: 28px;
-        /* 28px */
-    }
-
-    /* PROJECTS GRID MÁS COLUMNAS */
-    .projects__grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-/* ===========================================
-     47. ORIENTACIÓN LANDSCAPE - MÓDULO 5
-     =========================================== */
-@media (max-height: 600px) and (orientation: landscape) {
-
-    /* REDUCIR ALTURAS EN LANDSCAPE */
-    .hero {
-        min-height: 400px;
-    }
-
-    .hero__container {
-        min-height: auto;
-    }
-
-    section {
-        padding: 32px 0;
-    }
-}
-
-/* ===========================================
-     48. PRINT STYLES - MÓDULO 5
-     =========================================== */
-@media print {
-
-    /* OCULTAR ELEMENTOS NO NECESARIOS */
-    .nav,
-    .hero__actions,
-    .button,
-    .project__links,
-    .contact__methods,
-    .footer__nav {
-        display: none;
-    }
-
-    /* COLORES DE IMPRESIÓN */
-    body {
-        color: #000;
-        background: #fff;
-    }
-
-    .hero {
-        background: #f0f0f0;
-        color: #000;
-    }
-
-    /* ELIMINAR SOMBRAS */
-    * {
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    /* ENLACES EN IMPRESIÓN */
-    a {
-        color: #000;
-        text-decoration: underline;
-    }
-
-    /* MOSTRAR URLs */
-    a[href^="http"]:after {
-        content: " (" attr(href) ")";
-    }
-
-    /* EVITAR CORTES DE PÁGINA */
-    .project,
-    .about__container,
-    .skills__container {
-        page-break-inside: avoid;
-    }
-}
-
-/* ===========================================
-     49. PREFERENCIAS DE USUARIO - MÓDULO 5
-     =========================================== */
-
-/* Modo oscuro del sistema - DESHABILITADO para mantener paleta clara */
-/* @media (prefers-color-scheme: dark) {
-      Los colores se mantienen claros para mejor contraste
-  } */
-
-/* Reducir movimiento */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-
-    .button:hover,
-    .project:hover,
-    .values__item:hover {
-        transform: none;
-    }
-}
-
-/* ===========================================
-     50. UTILIDADES RESPONSIVE - MÓDULO 5
-     =========================================== */
-
-/* Clases útiles para ocultar/mostrar */
-@media (max-width: 768px) {
-    .hide-mobile {
-        display: none !important;
-    }
-}
-
-@media (min-width: 769px) {
-    .show-mobile {
-        display: none !important;
-    }
-}
-
-/* Texto responsive */
-.responsive-text {
-    font-size: clamp(16px, 2vw + 8px, 20px);
-    line-height: clamp(1.5, 2vw + 1.2, 1.8);
-}
-
-/* Espaciado responsive */
-.responsive-padding {
-    padding: clamp(16px, 5vw, 48px);
-}
-
-/* Ancho máximo fluido */
-.fluid-container {
-    width: min(90%, 1200px);
-    margin: 0 auto;
-}
-
-/* 
-  ╔═══════════════════════════════════════════════════════════════════════════╗
-  ║                                                                           ║
-  ║  MÓDULO 6: CÓDIGO NUEVO - EFECTOS Y ANIMACIONES                          ║
-  ║  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━   ║
-  ║  A partir de aquí todo es código NUEVO del Módulo 6                     ║
-  ║  Transiciones, Animaciones, Transforms, Efectos Hover                   ║
-  ║                                                                           ║
-  ╚═══════════════════════════════════════════════════════════════════════════╝
-  */
-
-/* ===========================================
-     51. TRANSICIONES GLOBALES - NUEVO MÓDULO 6
-     =========================================== */
-
-/* Aplicar transiciones suaves a elementos interactivos */
 a,
 button,
 .button,
@@ -2125,56 +1602,8 @@ button:hover,
     --delay: 0.4s;
 }
 
-/* ===========================================
-     54. NAVEGACIÓN ANIMADA - MÓDULO 6
-     =========================================== */
 
-/* Header con animación al cargar */
-.header {
-    animation: slideInFromTop 0.5s ease-out;
-}
 
-@keyframes slideInFromTop {
-    from {
-        transform: translateY(-100%);
-    }
-
-    to {
-        transform: translateY(0);
-    }
-}
-
-/* Enlaces de navegación con underline animado */
-.nav__link {
-    position: relative;
-    overflow: hidden;
-}
-
-.nav__link::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--gradient-primary);
-    transition: width 0.3s ease;
-}
-
-.nav__link:hover::before {
-    width: 100%;
-}
-
-/* Active link con animación */
-.nav__link--active {
-    animation: pulse 2s ease-in-out infinite;
-}
-
-/* ===========================================
-     55. BOTONES ANIMADOS - MÓDULO 6
-     =========================================== */
-
-/* Efecto ripple en botones */
 .button {
     position: relative;
     overflow: hidden;

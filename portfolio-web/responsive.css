@@ -1,0 +1,272 @@
+@media (max-width: 768px) {
+
+    /* HEADER RESPONSIVE */
+    .header__container {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .header__brand {
+        text-align: center;
+    }
+
+    .nav__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* HERO RESPONSIVE */
+    .hero__title {
+        font-size: 40px;
+        /* 40px */
+    }
+
+    .hero__subtitle {
+        font-size: 20px;
+        /* 20px */
+    }
+
+    .hero__stats {
+        gap: 32px;
+    }
+
+    /* ABOUT RESPONSIVE */
+    .values__list {
+        grid-template-columns: 1fr;
+    }
+
+    /* PROJECTS RESPONSIVE */
+    .projects__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project--featured {
+        grid-column: span 1;
+    }
+
+    /* CONTACT RESPONSIVE */
+    .contact__methods {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* TIPOGRAFÍA RESPONSIVE */
+    h1 {
+        font-size: 40px;
+        /* 40px */
+    }
+
+    h2 {
+        font-size: 32px;
+        /* 32px */
+    }
+
+    h3 {
+        font-size: 24px;
+        /* 24px */
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* ESPACIADO GENERAL */
+    body {
+        font-size: 14px;
+    }
+
+    /* PADDING REDUCIDO */
+    .header {
+        padding: 16px 0;
+    }
+
+    section {
+        padding: 32px 0;
+    }
+
+    /* HEADER MÓVIL */
+    .header__name {
+        font-size: 28px;
+        /* 28px */
+    }
+
+    .header__tagline {
+        font-size: 12px;
+        /* 12px */
+    }
+
+    .nav__list {
+        gap: 8px;
+    }
+
+    .nav__link {
+        font-size: 14px;
+        /* 14px */
+        padding: 6px 10px;
+    }
+
+    /* HERO MÓVIL */
+    .hero {
+        min-height: 500px;
+        padding: 48px 0;
+    }
+
+    .hero__title {
+        font-size: 32px;
+        /* 32px */
+        line-height: 1.2;
+    }
+
+    .hero__subtitle {
+        font-size: 18px;
+        /* 18px */
+    }
+
+    .hero__description {
+        font-size: 16px;
+        /* 16px */
+    }
+
+    .hero__actions {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .button {
+        width: 100%;
+        padding: 14px 20px;
+    }
+
+    .hero__stats {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .stat__number {
+        font-size: 32px;
+        /* 32px */
+    }
+
+    /* ABOUT MÓVIL */
+    .about__intro {
+        font-size: 18px;
+        /* 18px */
+    }
+
+    .quote {
+        padding: 24px;
+        margin: 32px 0;
+    }
+
+    .quote__text {
+        font-size: 18px;
+        /* 18px */
+    }
+
+    /* values__item ya está en columna por defecto */
+
+    /* PROJECTS MÓVIL */
+    .project {
+        padding: 24px;
+    }
+
+    .project__title {
+        font-size: 24px;
+        /* 24px */
+    }
+
+    /* SKILLS MÓVIL */
+    .skill__bar {
+        height: 20px;
+    }
+
+    .learning__list {
+        grid-template-columns: 1fr;
+    }
+
+    /* CONTACT MÓVIL */
+    .contact__method {
+        width: 100%;
+    }
+
+    /* FOOTER MÓVIL */
+    .footer__nav {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer__link {
+        font-size: 14px;
+        /* 14px */
+    }
+
+    /* TIPOGRAFÍA MÓVIL */
+    h1 {
+        font-size: 32px;
+        /* 32px */
+    }
+
+    h2 {
+        font-size: 28px;
+        /* 28px */
+    }
+
+    h3 {
+        font-size: 20px;
+        /* 20px */
+    }
+
+    h4 {
+        font-size: 18px;
+        /* 18px */
+    }
+
+    p {
+        margin-bottom: 16px;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    /* CONTENEDORES MÁS ANCHOS */
+    .header__container,
+    .projects__container,
+    .footer__container {
+        max-width: 1400px;
+    }
+
+    /* HERO MÁS GRANDE */
+    .hero {
+        min-height: 700px;
+    }
+
+    .hero__title {
+        font-size: 64px;
+        /* 64px */
+    }
+
+    .hero__subtitle {
+        font-size: 28px;
+        /* 28px */
+    }
+
+    /* PROJECTS GRID MÁS COLUMNAS */
+    .projects__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero__container {
+        min-height: auto;
+    }
+
+    section {
+        padding: 32px 0;
+    }
+}
